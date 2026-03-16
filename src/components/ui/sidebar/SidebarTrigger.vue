@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import { ViewVerticalIcon } from "@radix-icons/vue";
+import { PanelLeft } from "lucide-vue-next";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ const { toggleSidebar } = useSidebar();
     :class="cn('h-7 w-7', props.class)"
     @click="toggleSidebar"
   >
-    <ViewVerticalIcon class="h-8 w-8" />
+    <PanelLeft class="h-10 w-10" />
     <span class="sr-only">Toggle Sidebar</span>
   </Button>
 </template>

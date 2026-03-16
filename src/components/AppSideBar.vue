@@ -22,21 +22,7 @@ import {
 } from "@/components/ui/collapsible";
 import SearchCommand from "./SearchCommand.vue";
 
-const data = {
-  versions: ["v1.0", "v2.0", "v3.0"],
-  navMain: [
-    {
-      title: "Master",
-      active: true,
-      icons: Database,
-      items: [
-        { title: "Introduction", url: "#", isActive: true },
-        { title: "Installation", url: "#" },
-        { title: "Quick Start Guide", url: "#" },
-      ],
-    },
-  ],
-};
+import sidebarMenu from "@/lib/menu";
 </script>
 
 <template>
@@ -45,11 +31,10 @@ const data = {
       <h1 class="font-bold p-2 text-2xl">
         Your App <span class="text-sm font-normal">v.0</span>
       </h1>
-
       <SearchCommand />
     </SidebarHeader>
     <SidebarContent>
-      <SidebarGroup v-for="navItem in data.navMain" :key="navItem.title">
+      <SidebarGroup v-for="navItem in sidebarMenu.navMain" :key="navItem.title">
         <SidebarGroupContent>
           <SidebarMenu>
             <Collapsible
