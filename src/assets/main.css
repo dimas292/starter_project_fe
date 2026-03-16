@@ -6,8 +6,8 @@
 :root {
   --background: oklch(0.99 0.002 163);
   --radius: 5px;
-  /* --popover: oklch(1 0 0); */
-  /* --sidebar-border: #fbf6f6; */
+  --popover: oklch(1 0 0);
+  --sidebar-border: #fbf6f6;
   --sidebar-ring: #3b41e3;
   --sidebar: #f3f4f4;
   --sidebar-accent: #bfc9d1;

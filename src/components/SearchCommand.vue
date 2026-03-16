@@ -21,7 +21,7 @@ import sidebarMenu from "@/lib/menu";
   <button @click="openSearch.toOpen(true)">
     <SearchForm />
   </button>
-
+  <!-- open and close search dialog -->
   <CommandDialog
     :open="openSearch.open"
     @update:open="openSearch.$patch({ open: false })"
@@ -31,7 +31,7 @@ import sidebarMenu from "@/lib/menu";
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup v-for="value in sidebarMenu.navMain">
-          <CommandItem v-for="items in value.items" 
+          <CommandItem v-for="items in value.items"
             >{{ items.title }}
           </CommandItem>
         </CommandGroup>

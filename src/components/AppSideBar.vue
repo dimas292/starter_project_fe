@@ -28,6 +28,7 @@ import sidebarMenu from "@/lib/menu";
 <template>
   <Sidebar>
     <SidebarHeader>
+      <img src="../assets/logo.svg" alt="" class="h-16" />
       <h1 class="font-bold p-2 text-2xl">
         Your App <span class="text-sm font-normal">v.0</span>
       </h1>
